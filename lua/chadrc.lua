@@ -19,6 +19,17 @@ M.base46 = {
 --       tabufline = {
 --          lazyload = false
 --      }
--- }
+--}
+
+if vim.g.vscode then
+  M.ui = {
+    theme = "vscode",
+    statusline = { theme = "vscode" },
+  }
+else
+  M.ui = {
+    theme = "catppuccin",
+  }
+end
 
 return M
